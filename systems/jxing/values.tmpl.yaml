@@ -10,7 +10,7 @@ nginx-ingress:
 {{- if eq .Requirements.cluster.provider "eks" }}
       annotations:
         service.beta.kubernetes.io/aws-load-balancer-type: nlb
-        service.beta.kubernetes.io/aws-load-balancer-eip-allocations: "eipalloc-0e02c37cbbcc82209,eipalloc-0c81316886d8086ec"
+        #service.beta.kubernetes.io/aws-load-balancer-eip-allocations: "eipalloc-0e02c37cbbcc82209,eipalloc-0c81316886d8086ec"
 {{- end }}
   defaultBackend:
     service:
