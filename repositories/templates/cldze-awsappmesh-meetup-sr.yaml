@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: CLDZE
+    provider: github
+    repository: AWSAppMesh-Meetup
+  name: cldze-awsappmesh-meetup
+spec:
+  description: Imported application for CLDZE/AWSAppMesh-Meetup
+  httpCloneURL: https://github.com/CLDZE/AWSAppMesh-Meetup.git
+  org: CLDZE
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: AWSAppMesh-Meetup
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/CLDZE/AWSAppMesh-Meetup.git

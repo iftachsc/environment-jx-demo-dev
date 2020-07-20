@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: CLDZE
+  repo: AWSAppMesh-Meetup
+  url: https://github.com/CLDZE/AWSAppMesh-Meetup.git
+  version: ""
+  versionURL: ""
