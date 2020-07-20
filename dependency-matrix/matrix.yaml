@@ -1,7 +1,7 @@
 dependencies:
 - host: github.com
-  owner: iftachsc
-  repo: mesh-dashbaord
-  url: https://github.com/iftachsc/mesh-dashbaord.git
+  owner: CLDZE
+  repo: mesh-color-controller
+  url: https://github.com/CLDZE/mesh-color-controller.git
   version: ""
   versionURL: ""
