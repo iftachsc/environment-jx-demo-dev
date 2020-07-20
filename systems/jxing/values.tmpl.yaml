@@ -11,6 +11,7 @@ nginx-ingress:
       annotations:
         service.beta.kubernetes.io/aws-load-balancer-type: nlb
         service.beta.kubernetes.io/aws-load-balancer-eip-allocations: "eipalloc-0e02c37cbbcc82209,eipalloc-0c81316886d8086ec,eipalloc-05f20ceada17229ef"
+        service.beta.kubernetes.io/aws-load-balancer-backend-protocol: tcp
 {{- end }}
   defaultBackend:
     service:
