@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: CLDZE
+  repo: mesh-color-controller
+  url: https://github.com/CLDZE/mesh-color-controller.git
+  version: ""
+  versionURL: ""
