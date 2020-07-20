@@ -1,35 +1,80 @@
+autoUpdate:
+  enabled: false
+  schedule: ""
+bootConfigURL: https://github.com/hibobio/environment-hibob-stage-dev-new-dev
 cluster:
-  clusterName: ""
-  environmentGitOwner: ""
-  environmentGitPublic: false
-  project: ""
-  provider: gke
-  zone: ""
-gitops: true
+  clusterName: "jx-demo"
+  devEnvApprovers:
+  - iftachsc
+  environmentGitOwner: CLDZE
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
+  provider: eks
+  region: eu-west-1
+  registry: 535518648590.dkr.ecr.eu-west-1.amazonaws.com
 environments:
-- key: dev
-- key: staging
-- key: production
+- ingress:
+    domain: demo.cldze.com
+    externalDNS: true
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+  repository: environment-jx-demo-dev
+- ingress:
+    domain: demo.cldze.com
+    externalDNS: true
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+  repository: environment-jxdemo-staging
+- ingress:
+    domain: demo.cldze.com
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
+  remoteCluster: false
+  repository: environment-jxdemo-production
+gitops: true
 ingress:
-  domain: ""
-  externalDNS: false
+  domain: demo.cldze.com
+  externalDNS: true
+  namespaceSubDomain: -jx.
   tls:
     email: ""
     enabled: false
     production: false
 kaniko: true
+repository: nexus
 secretStorage: local
 storage:
   logs:
-    enabled: false
-    url: ""
+    enabled: true
+    url: s3://logs-jx-demo-20200720133632132700000003
   reports:
-    enabled: false
-    url: ""
+    enabled: true
+    url: s3://reports-jx-demo-20200720133631982400000001
   repository:
-    enabled: false
-    url: ""
+    enabled: true
+    url: s3://repository-jx-demo-20200720133632073900000002
+terraform: true
+vault: {}
+velero:
+  schedule: ""
+  ttl: ""
 versionStream:
-  ref: "master"
+  ref: v1.0.448
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: lighthouse
+
