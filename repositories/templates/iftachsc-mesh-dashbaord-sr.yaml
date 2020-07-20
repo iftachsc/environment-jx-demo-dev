@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: iftachsc
+    provider: github
+    repository: mesh-dashbaord
+  name: iftachsc-mesh-dashbaord
+spec:
+  description: Imported application for iftachsc/mesh-dashbaord
+  httpCloneURL: https://github.com/iftachsc/mesh-dashbaord.git
+  org: iftachsc
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: mesh-dashbaord
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/iftachsc/mesh-dashbaord.git
