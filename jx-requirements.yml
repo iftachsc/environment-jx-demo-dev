@@ -1,8 +1,8 @@
 autoUpdate:
   enabled: false
   schedule: ""
-bootConfigURL: https://github.com/hibobio/environment-hibob-stage-dev-new-dev
 cluster:
+  chartRepository: http://bucketrepo/bucketrepo/charts/
   clusterName: jx-demo
   devEnvApprovers:
   - iftachsc
