@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: CLDZE
+    provider: github
+    repository: mesh-dashboard
+  name: cldze-mesh-dashboard
+spec:
+  description: Imported application for CLDZE/mesh-dashboard
+  httpCloneURL: https://github.com/CLDZE/mesh-dashboard.git
+  org: CLDZE
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: mesh-dashboard
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/CLDZE/mesh-dashboard.git
