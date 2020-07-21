@@ -1,8 +1,6 @@
 apiVersion: jenkins.io/v1
 kind: SourceRepository
 metadata:
-  annotations:
-    jenkins.io/last-build-number-for-master: "2"
   creationTimestamp: null
   labels:
     owner: CLDZE
