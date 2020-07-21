@@ -11,3 +11,9 @@ dependencies:
   url: https://github.com/CLDZE/mesh-dashboard.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: CLDZE
+  repo: servicemesh-color-controller
+  url: https://github.com/CLDZE/servicemesh-color-controller.git
+  version: ""
+  versionURL: ""
