@@ -5,7 +5,7 @@ docker:
   email: dummy
   password: local:jx-demo/docker:password
   url: https://535518648590.dkr.ecr.eu-west-1.amazonaws.com
-  username: dummy
+  username: cldze
 enableDocker: true
 pipelineUser:
   email: iftachsc@cloudzone.io
