@@ -14,7 +14,7 @@ cluster:
   namespace: jx
   provider: eks
   region: eu-west-1
-  registry: https://535518648590.dkr.ecr.eu-west-1.amazonaws.com
+  registry: 535518648590.dkr.ecr.eu-west-1.amazonaws.com
 environments:
 - ingress:
     domain: demo.cldze.io
@@ -70,7 +70,7 @@ storage:
     url: s3://reports-jx-demo-20200720133631982400000001
   repository:
     enabled: true
-    url: s3://repository-jx-demo-20200720133632073900000002
+    url: s3://repository-jx-demo-20200720133632073900000002?region=eu-west-1
 terraform: true
 vault: {}
 velero:
